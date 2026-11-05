@@ -59,7 +59,7 @@ h3 { margin: 0; font-size: 18px; }
 p { margin: 0 0 11px; }
 .home-layout, .teaching-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(160px, 23vw, 229px);
+  grid-template-columns: minmax(0, 1fr) clamp(160px, 23vw, 270px);
   align-items: start;
   column-gap: clamp(24px, 5vw, 55px);
 }
@@ -169,12 +169,12 @@ summary { color: var(--accent); cursor: pointer; }
 @media (max-width: 575.98px) {
   .home-layout, .teaching-layout { grid-template-columns: minmax(0, 1fr); }
   .home-layout {
-    grid-template-areas: "title" "photo" "intro";
+    grid-template-areas: "title" "intro" "photo";
     grid-template-rows: auto;
     row-gap: 16px;
   }
   .teaching-layout {
-    grid-template-areas: "photo" "courses";
+    grid-template-areas: "courses" "photo";
     row-gap: 19px;
   }
 }
