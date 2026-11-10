@@ -189,3 +189,38 @@ summary { color: var(--accent); cursor: pointer; }
   .paper, .course { break-inside: avoid; }
   a { color: inherit; }
 }
+
+
+/* Compact homepage layout — desktop only */
+@media (min-width: 900px) {
+
+  /* Reduce empty space above and below content */
+  .home-main {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  /* Bring Welcome closer to the introduction */
+  .home-main .home-title {
+    margin-top: 0;
+    margin-bottom: 0.65rem;
+  }
+
+  /* Slightly tighten paragraph spacing */
+  .home-main .intro p {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    line-height: 1.48;
+  }
+
+  /* Keep the job-market announcement compact */
+  .home-main .intro p.market {
+    margin-top: 0.15rem;
+    margin-bottom: 0.45rem;
+  }
+
+  /* Bring the document links closer to the text */
+  .home-main .document-links {
+    margin-top: 0.3rem;
+  }
+}
