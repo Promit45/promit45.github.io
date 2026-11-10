@@ -224,3 +224,19 @@ summary { color: var(--accent); cursor: pointer; }
     margin-top: 0.3rem;
   }
 }
+
+
+@media (min-width: 900px) {
+
+  /* Slightly reduce header and footer height */
+  .site:has(.home-main) .header {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .site:has(.home-main) .footer {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
